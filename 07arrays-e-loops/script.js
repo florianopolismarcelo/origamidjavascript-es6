@@ -1,4 +1,4 @@
-var videoGames = ["SNES", "MEGADRIVE", "NEOGEO"];
+let videoGames = ["SNES", "MEGADRIVE", "NEOGEO"];
 console.log(videoGames.length); // iforma quantas tem dentro do array
 videoGames.push("DREAN CAST"); // adiciona último item
 console.log(videoGames);
@@ -7,13 +7,13 @@ console.log(videoGames);
 
 //---------------------------
 
-for (var i = 0; i <= 10; i++) {
+for (let i = 0; i <= 10; i++) {
   console.log(i);
 }
 
 //---------------------------
 
-var i = 0;
+let i = 0;
 while (i <= 50) {
   console.log(i);
   //i++;
@@ -22,7 +22,7 @@ while (i <= 50) {
 
 //---------------------------
 
-var intrumentosMusicais = [
+let intrumentosMusicais = [
   "Cavaquinho",
   "Violão",
   "Banjo",
@@ -38,7 +38,7 @@ for (i = 0; i < intrumentosMusicais.length; i++) {
   }
 }
 
-var frutas = ["Goiaba", "Mamão", "Uva", "Abacate", "Laranja"];
+let frutas = ["Goiaba", "Mamão", "Uva", "Abacate", "Laranja"];
 frutas.forEach(function(xxxdd) { // Entre () pode passar qualquer parâmetro no forEach
   console.log(xxxdd);
 });
