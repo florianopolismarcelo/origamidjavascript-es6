@@ -1,3 +1,4 @@
+/*
 const h1 = document.querySelector("h1");
 const animaisLista = document.querySelector(".animais-lista");
 
@@ -31,5 +32,11 @@ novoh1.innerText = 'Novo Titulo'
 
 mapa.appendChild(novoh1)
 console.log(novoh1)
+*/
+const h1 = document.querySelector("h1");
+const faq = document.querySelector(".faq");
 
+const cloneH1 = h1.cloneNode(true);
 
+cloneH1.classList.add("azul");
+faq.appendChild(cloneH1);
