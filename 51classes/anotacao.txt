@@ -1,0 +1,23 @@
+Abaixo é uma função construtora criando um objeto botão.
+
+function Button(text, background) {
+  this.text = text;
+  this.background = background;
+}
+
+const blueButton = new Button("comprar", "blue");
+
+console.log(blueButton);
+
+------------------------------------------------------------------------------------------
+Abaixo é uma class criando um objeto botão.
+
+class Button {
+  constructor(text, background) {
+  this.text = text;
+  this.background = background;
+}
+}
+const blueButton2 = new Button("comprar", "blue");
+
+console.log(blueButton2);
