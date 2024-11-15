@@ -77,7 +77,7 @@ Button1.prototype.element = function() {
   
   const blueButton4 = new Button4(optionsBlue4);
   console.log(blueButton4);
-  
+
   console.log("-------------------------------------------------------")
   
   //Objeto pelo lado dentro
@@ -118,5 +118,31 @@ Button1.prototype.element = function() {
   const blueButtonStatic6 = Button6.createButton6('click', 'blue')
   console.log(blueButtonStatic6)
   
-  
-  
+  console.log("-------------------------------------------------------")
+
+class Button7 {
+  constructor(text, background, color) {
+    this.text = text;
+    this.background = background;
+    this.color = color;
+  }
+  element() {
+    const buttonElement7 = document.createElement("button");
+    buttonElement7.innerText = this.text;
+    buttonElement7.style.background = this.background;
+    buttonElement7.style.color = this.color;
+    return buttonElement7;
+  }
+  appendTo(target) {
+    const targetElement7 = document.querySelector(target);
+    targetElement7.appendChild(this.element());
+    console.log(this);
+    return targetElement7;
+  }
+  static blueButton7(text) {
+    return new Button7(text, "blue", "white");
+  }
+}
+
+const blueButton7 = Button7.blueButton7('comprar');
+console.log(blueButton7)
