@@ -1,0 +1,22 @@
+- Não é possível mudar o tamanho só é possível mudar com o método Set.
+
+const button1 = {
+  get tamanho1() {
+    return 200;
+  },
+};
+console.log(button1.tamanho1)
+
+------------------------------------------------------------------------------------------
+- Abaixo com o método set
+
+const button2 = {
+  get tamanho2() {
+    button2.tamanho2 = 400;
+    return this._numero;
+  },
+  set tamanho2(numero) {
+    this._numero = numero * 2;
+  },
+};
+console.log(button2.tamanho2);
