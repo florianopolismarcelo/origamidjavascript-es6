@@ -18,12 +18,3 @@ const elementsInnerText1 = ([...elements2]) => {
 console.log(elementsInnerText1(cpfs2));
 
 console.log("---------------------------------");
-//Abaixo limpa CPF completo
-const cpfs3 = document.querySelectorAll(".cpf li");
-
-const elementsInnerText2 = ([...elements3]) => {
-  return elements3.map((element4) => element4.innerText);
-};
-const limparCPF = (cpf) => {
-  return cpf.replace(/\D/g, ""); //Limpa tudo que não for digito(número)
-};
